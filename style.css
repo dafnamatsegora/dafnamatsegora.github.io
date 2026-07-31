@@ -30,7 +30,6 @@ nav a:hover {
   gap: 30px;
   margin-top: 20px;
   text-align: left;
-  flex-direction: row-reverse;
 }
 
 .profile-photo {
