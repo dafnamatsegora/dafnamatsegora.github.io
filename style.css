@@ -60,3 +60,34 @@ nav a:hover {
 .bio a:hover {
   color: #888;
 }
+
+main h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.entry {
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entry h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.meta {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 8px;
+}
