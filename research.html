@@ -19,36 +19,47 @@
   <main>
     <h1>Research</h1>
     <p class="intro">
-      I'm a Master's student in the Symbolic Computation Group at the University of Waterloo, supervised by
-      <a href="https://bohr.wlu.ca/ezima/">Eugene Zima</a> and <a href="https://www.csd.uwo.ca/~watt/">Stephen Watt</a>.
+      My work focuses on constructing interpolating splines parameterized by arc-length rather
+      than an arbitrary parameter, using an iterative algorithm, and studying how and why that
+      algorithm converges to the correct parameterization.
     </p>
 
-    <section class="entry">
-      <h2>Arc-Length Parameterized Interpolating Splines</h2>
-      <p class="meta">With Stephen M. Watt · Presented at ICMS 2026</p>
-      <p>
-        An iterative method for computing a spline that exactly interpolates a set of points while
-        being parameterized by true arc length — meaning the parameter directly reflects distance
-        traveled along the curve, not just an approximation of it. This matters for applications like
-        handwriting recognition and path planning, where the same shape traced at different speeds
-        should still produce a consistent representation. The method works in any dimension and
-        converges to a good approximation in just a couple of iterations for most shapes tested.
-      </p>
-      <p class="links">
-        <a href="papers/arc-length-splines-paper.pdf">Paper (PDF)</a> ·
-        <a href="papers/arc-length-splines-slides.pdf">Slides (PDF)</a>
-      </p>
-    </section>
-    
-    <section class="entry">
-      <h2>Current work: convergence guarantees</h2>
-      <p class="meta">Ongoing</p>
-      <p>
-        Right now I'm working on proving that this iterative algorithm actually converges — and
-        ideally, that the result is unique. Empirically it converges quickly on every shape we've
-        tested so far, but a formal proof is still an open problem.
-      </p>
-    </section>
+  <section class="entry">
+    <h2>Arc-Length Parameterized Interpolating Splines</h2>
+    <p class="meta">With Stephen M. Watt · Presented at ICMS 2026</p>
+    <p>
+      An iterative algorithm for computing splines that interpolate a set of points while being
+      parameterized by true arc length, rather than an arbitrary parameter.
+    </p>
+    <p class="links">
+      <a href="papers/arc-length-splines-paper.pdf">Paper (PDF)</a> ·
+      <a href="papers/arc-length-splines-slides.pdf">Slides (PDF)</a>
+    </p>
+  </section>
+  
+  <section class="entry">
+    <h2>Current work: convergence guarantees</h2>
+    <p class="meta">Ongoing</p>
+    <p>
+      I'm now working on proving that this iterative algorithm converges, and ideally that its
+      result is unique. It converges quickly in every case tested so far, but a formal proof
+      remains an open problem.
+    </p>
+  </section>
+  
+  <section class="entry">
+    <h2>A Two-Phase Scheme for Multi-Labeled Feature Selection</h2>
+    <p class="meta">USRA project with Dr. Azam Asilian Bidgoli</p>
+    <p>
+      Investigated whether adding an initial filtering phase — ranking features by a Maximal
+      Information Coefficient score before applying a genetic algorithm — improves multi-label
+      feature selection compared to using the genetic algorithm alone. Evaluated results using
+      MLKNN classification and statistical significance testing (Wilcoxon rank-sum).
+    </p>
+    <p class="links">
+      <a href="https://github.com/hmdafna/The-shrunk-scheme-for-the-search-space-in-multilabeled-feature-selection">Code (GitHub)</a>
+    </p>
+  </section>
   </main>
 
 </body>
