@@ -24,15 +24,30 @@
     </p>
 
     <section class="entry">
-      <h2>[Project or topic title]</h2>
-      <p class="meta">[Timeframe, e.g. 2024–present]</p>
-      <p>[1–3 sentences on what it's about and why it's interesting.]</p>
+      <h2>Arc-Length Parameterized Interpolating Splines</h2>
+      <p class="meta">With Stephen M. Watt · Presented at ICMS 2026</p>
+      <p>
+        An iterative method for computing a spline that exactly interpolates a set of points while
+        being parameterized by true arc length — meaning the parameter directly reflects distance
+        traveled along the curve, not just an approximation of it. This matters for applications like
+        handwriting recognition and path planning, where the same shape traced at different speeds
+        should still produce a consistent representation. The method works in any dimension and
+        converges to a good approximation in just a couple of iterations for most shapes tested.
+      </p>
+      <p class="links">
+        <a href="papers/arc-length-splines-paper.pdf">Paper (PDF)</a> ·
+        <a href="papers/arc-length-splines-slides.pdf">Slides (PDF)</a>
+      </p>
     </section>
-
+    
     <section class="entry">
-      <h2>[Course or experience title]</h2>
-      <p class="meta">[Timeframe]</p>
-      <p>[Short description.]</p>
+      <h2>Current work: convergence guarantees</h2>
+      <p class="meta">Ongoing</p>
+      <p>
+        Right now I'm working on proving that this iterative algorithm actually converges — and
+        ideally, that the result is unique. Empirically it converges quickly on every shape we've
+        tested so far, but a formal proof is still an open problem.
+      </p>
     </section>
   </main>
 
