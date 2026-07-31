@@ -105,3 +105,23 @@ main h1 {
 .links a:hover {
   color: #888;
 }
+
+#world-map {
+  width: 100%;
+  height: 400px;
+  margin: 24px 0;
+}
+
+.travel-photos {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.travel-photos img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
