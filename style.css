@@ -25,27 +25,31 @@ nav a:hover {
 }
 
 .profile {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
   margin-top: 20px;
+  text-align: left;
 }
 
 .profile-photo {
-  width: 140px;
-  height: 140px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  flex-shrink: 0;
 }
 
-.profile h1 {
-  margin-bottom: 12px;
-  font-size: 28px;
+.profile-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .bio {
+  font-size: 14px;
+  color: #666;
   max-width: 480px;
-  margin: 0 auto;
-  color: #555;
+  margin: 0;
 }
 
 .bio a {
