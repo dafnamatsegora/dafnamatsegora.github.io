@@ -91,3 +91,17 @@ main h1 {
   color: #999;
   margin-bottom: 8px;
 }
+
+.links {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.links a {
+  color: #2e2e33;
+  text-decoration: underline;
+}
+
+.links a:hover {
+  color: #888;
+}
