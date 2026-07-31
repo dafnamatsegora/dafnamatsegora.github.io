@@ -29,7 +29,8 @@ nav a:hover {
   align-items: center;
   gap: 30px;
   margin-top: 20px;
-  text-align: right;
+  text-align: left;
+  flex-direction: row-reverse;
 }
 
 .profile-photo {
