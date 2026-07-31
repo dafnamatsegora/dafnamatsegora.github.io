@@ -1,0 +1,23 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #2e2e33;
+  line-height: 1.6;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+nav a {
+  margin-right: 16px;
+  color: #2e2e33;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #2e2e33;
+}
