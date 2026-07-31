@@ -1,23 +1,58 @@
 body {
   font-family: system-ui, sans-serif;
   max-width: 700px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
   color: #2e2e33;
   line-height: 1.6;
 }
 
 header {
+  padding: 24px 0;
   margin-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 nav a {
-  margin-right: 16px;
+  margin-right: 20px;
   color: #2e2e33;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  font-size: 15px;
 }
 
 nav a:hover {
   border-bottom: 1px solid #2e2e33;
+}
+
+.profile {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.bio {
+  max-width: 480px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.bio a {
+  color: #2e2e33;
+  text-decoration: underline;
+}
+
+.bio a:hover {
+  color: #888;
 }
