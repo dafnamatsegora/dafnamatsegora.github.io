@@ -7,11 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsvectormap/1.4.3/css/jsvectormap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsvectormap/1.4.3/js/jsvectormap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsvectormap/1.4.3/maps/world.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/1.2.2/jquery-jvectormap.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/1.2.2/jquery-jvectormap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/1618033/jvectormap-maps@master/jquery-jvectormap-us-aea.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/1618033/jvectormap-maps@master/jquery-jvectormap-ca-lcc.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -41,7 +37,7 @@
         selector: '#world-map',
         map: 'world',
         zoomButtons: false,
-        zoomOnScroll: false,
+        zoomOnScroll: true,
         regionsSelectable: false,
         selectedRegions: ['US', 'CA', 'IL', 'RU', 'UA', 'IT', 'GR', 'FR', 'ES', 'DE', 'BE', 'NL', 'GB', 'PL', 'AT', 'CH', 'LU'],
         regionStyle: {
@@ -50,59 +46,6 @@
           hover: { fill: '#aaaaaa', cursor: 'pointer' }
         },
         backgroundColor: 'transparent'
-      });
-    </script>
-
-    <p class="travel-note">
-      In the past little while, I've decided to start exploring more of North America. Here's a map of the provinces and states I've visited so far.
-    </p>
-    
-    <div class="na-maps">
-      <div class="na-map-block">
-        <p class="map-label">Canada</p>
-        <div id="canada-map"></div>
-      </div>
-      <div class="na-map-block">
-        <p class="map-label">United States</p>
-        <div id="usa-map"></div>
-      </div>
-    </div>
-    
-    <script>
-      $(function () {
-        $('#usa-map').vectorMap({
-          map: 'us_aea',
-          backgroundColor: 'transparent',
-          zoomOnScroll: false,
-          regionStyle: {
-            initial: { fill: '#e0e0e0', stroke: '#fff', strokeWidth: 0.5 },
-            hover: { fill: '#aaaaaa' }
-          },
-          series: {
-            regions: [{
-              values: { 'US-NY': 1, 'US-PA': 1, 'US-MA': 1 },
-              scale: ['#e0e0e0', '#2e2e33'],
-              normalizeFunction: 'linear'
-            }]
-          }
-        });
-    
-        $('#canada-map').vectorMap({
-          map: 'ca_lcc',
-          backgroundColor: 'transparent',
-          zoomOnScroll: false,
-          regionStyle: {
-            initial: { fill: '#e0e0e0', stroke: '#fff', strokeWidth: 0.5 },
-            hover: { fill: '#aaaaaa' }
-          },
-          series: {
-            regions: [{
-              values: { 'CA-ON': 1, 'CA-NS': 1, 'CA-BC': 1 },
-              scale: ['#e0e0e0', '#2e2e33'],
-              normalizeFunction: 'linear'
-            }]
-          }
-        });
       });
     </script>
 
