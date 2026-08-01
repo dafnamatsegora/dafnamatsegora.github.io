@@ -202,52 +202,47 @@ main h1 {
   margin-right: 10px;
 }
 
-.quick-links {
-  display: flex;
-  gap: 12px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.quick-link {
-  flex: 1;
-  min-width: 150px;
-  padding: 16px;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #2e2e33;
-  transition: border-color 0.2s;
-}
-
-.quick-link:hover {
-  border-color: #2e2e33;
-}
-
-.quick-link-title {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.quick-link-desc {
-  display: block;
-  font-size: 13px;
-  color: #888;
-}
-
-.socials {
-  margin-top: 32px;
-  display: flex;
-  gap: 16px;
-}
-
-.socials a {
-  color: #2e2e33;
-  text-decoration: underline;
+.contact-row {
+  margin-top: 12px;
   font-size: 14px;
 }
 
-.socials a:hover {
+.contact-row a {
+  color: #2e2e33;
+  text-decoration: underline;
+}
+
+.contact-row a:hover {
   color: #888;
+}
+
+.contact-row .dot {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+.news {
+  margin-top: 48px;
+}
+
+.news h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.news ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news li {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.news-date {
+  color: #999;
+  margin-right: 8px;
 }
